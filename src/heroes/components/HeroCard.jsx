@@ -6,13 +6,13 @@ export const HeroCard = ({ id, superhero, publisher, alter_ego, first_appearance
   const heroImageUrl = `/assets/heroes/${id}.jpg`;
 
   return (
-    <div className="col">
+    <div className="col-sm-6">
       <div className="card">
         <div className="row no-gutters">
-          <div className="col-4">
+          <div className="col-sm-2 col-md-6">
             <img src={heroImageUrl} className="card-img" alt={superhero} />
           </div>
-          <div className="col-8">
+          <div className="col-sm-10 col-md-6">
             <div className="card-body">
               <h5 className="card-title">{superhero}</h5>
               <p className="card-text">{alter_ego}</p>
