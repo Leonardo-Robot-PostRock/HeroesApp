@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { getHeroesById } from '../helpers';
 
 export const HeroPage = () => {
   const { id } = useParams();
 
-  const hero = getHeroesById(id);
+  const hero = useMemo(() => getHeroesById(id), [id]);
 
   const navigate = useNavigate();
 
