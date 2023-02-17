@@ -8,9 +8,9 @@ export const Navbar = () => {
       replace: true
     });
   return (
-    <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2 fixed-top mb-30">
+    <nav className="navbar navbar-expand-sm navbar-dark bg-dark p-2 fixed-top mb-30 animate__animated animate__slideInDown">
       <Link className="navbar-brand" to="/">
-        <img src="../../../assets/dc-marvel.png" alt="dc y marvel" className='logo'/>
+        <img src="../../../assets/dc-marvel.png" alt="dc y marvel" className='logo animate__animated animate__wobble'/>
       </Link>
       <div className='d-flex'>
         <button
@@ -24,7 +24,7 @@ export const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
       </div>
-      <div className="collapse navbar-collapse" id="navbarNav">
+      <div className="collapse navbar-collapse animate__animated animate__jello" id="navbarNav">
         <div className="navbar-nav">
           <NavLink className={({ isActive }) => `nav-link  text-end ${isActive ? 'active' : ''} `} to="/marvel">
             Marvel
