@@ -33,6 +33,9 @@ export const Navbar = () => {
           <NavLink className={({ isActive }) => `nav-link text-end ${isActive ? 'active' : ''} `} to="/dc">
             DC
           </NavLink>
+          <NavLink className={({ isActive }) => `nav-link text-end ${isActive ? 'active' : ''} `} to="/search">
+            Search
+          </NavLink>
         </div>
 
         <div className="navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end">
