@@ -20,11 +20,11 @@ export const HeroPage = () => {
 
   return (
     <div className="row mt-5">
-      <div className="col-4">
+      <div className="col-4 animate__animated animate__rubberBand">
         <img src={`/assets/heroes/${id}.jpg`} alt={hero.superhero} className="img-thumbnail" />
       </div>
 
-      <div className="col-8">
+      <div className="col-8 animate__animated animate__flash">
         <h3>{hero.superhero}</h3>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">
