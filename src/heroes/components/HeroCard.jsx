@@ -9,7 +9,7 @@ export const HeroCard = ({ id, superhero, publisher, alter_ego, first_appearance
     <div className="col-sm-6">
       <div className="card">
         <div className="row no-gutters">
-          <div className="col-sm-6 col-md-6">
+          <div className="col-sm-6 col-md-6 animate__animated animate__fadeIn">
             <img src={heroImageUrl} className="card-img" alt={superhero} />
           </div>
           <div className="col-sm-10 col-md-6">
