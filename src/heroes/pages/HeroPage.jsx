@@ -19,12 +19,12 @@ export const HeroPage = () => {
   }
 
   return (
-    <div className="row mt-5">
-      <div className="col-4 animate__animated animate__rubberBand">
+    <div className="row mt-5 justify-content-center">
+      <div className="col-6 col-sm-7 col-md-5 col-lg-4 col-xl-3 col-xxl-6 animate__animated animate__rubberBand">
         <img src={`/assets/heroes/${id}.jpg`} alt={hero.superhero} className="img-thumbnail" />
       </div>
 
-      <div className="col-8 animate__animated animate__flash">
+      <div className="col-12 col-sm-5 col-md-4 col-lg-4 col-xl-3 col-xxl-4 justify-content-center animate__animated animate__flash">
         <h3>{hero.superhero}</h3>
         <ul className="list-group list-group-flush">
           <li className="list-group-item">
@@ -44,7 +44,7 @@ export const HeroPage = () => {
         <h5 className="mt-3">Characters</h5>
         <p>{hero.characters}</p>
 
-        <button className="btn btn-outline-primary" onClick={onNavigateBack}>
+        <button className="btn btn-outline-primary mb-3" onClick={onNavigateBack}>
           Regresar
         </button>
       </div>
