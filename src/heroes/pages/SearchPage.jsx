@@ -14,8 +14,6 @@ export const SearchPage = () => {
 
   const heroes = getHeroesByName(q);
 
-  console.log(heroes);
-
   const showSearch = q.length === 0;
   const showError = q.length > 0 && heroes.length === 0;
 
@@ -60,14 +58,18 @@ export const SearchPage = () => {
             style={{ display: showSearch ? '' : 'none' }}>
             Search a hero
           </div>
-          <div className="alert alert-danger animate__animated animate__shakeX" style={{ display: showError ? '' : 'none' }}>
+          <div
+            className="alert alert-danger animate__animated animate__shakeX"
+            style={{ display: showError ? '' : 'none' }}>
             No hero with <b>{q}</b>
           </div>
 
           {heroes.map((hero) => (
-            <div className="mb-4 d-flex justify-content-center">
-              <HeroCard {...hero} key={hero.id} />
-            </div>
+            <React.Fragment key={hero.id}>
+              <div className="mb-4 d-flex justify-content-center">
+                <HeroCard {...hero} />
+              </div>
+            </React.Fragment>
           ))}
         </div>
       </div>
