@@ -42,8 +42,6 @@ export const AuthProvider = ({ children }) => {
 			type: types.logout,
 		};
 
-		localStorage.setItem('user', JSON.stringify(user));
-
 		dispatch(action);
 	};
 
