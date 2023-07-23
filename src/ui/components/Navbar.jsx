@@ -17,7 +17,7 @@ export const Navbar = () => {
 		<nav className='navbar navbar-expand-sm navbar-dark bg-dark p-2 fixed-top mb-30 animate__animated animate__slideInDown'>
 			<Link className='navbar-brand' to='/'>
 				<img
-					src='../../../assets/dc-marvel.png'
+					src='../../../public/dc-marvel.png'
 					alt='dc y marvel'
 					className='logo animate__animated animate__wobble'
 				/>
